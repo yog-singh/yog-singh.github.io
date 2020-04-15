@@ -15,14 +15,20 @@ html,body {
     height: 100%;
     vertical-align: middle;
 }
-
+.code {
+  font-family: 'Courier', sans-serif;
+}
 h1,h2 {
   font-weight: 200;
   margin: 0.4em 0;
 }
-h1 { font-size: 3.5em; }
+h1 { 
+  color: #ffffff;
+  font-size: 3.5em; 
+  padding: 5px;
+}
 h2 {
-  color: #888;
+  color: #b0b0b0;
   font-size: 2em;
 }
 
@@ -52,7 +58,7 @@ h2 {
     background: #222;
     color: white;
   }
-  .fa-instagram {
+  .fa-envelope {
     background: #222;
     color: white;
   }
@@ -63,4 +69,7 @@ h2 {
   .fa-twitter {
     background: #222;
     color: white;
+  }
+  .footer-copyright {
+    font-size: 12px;
   }

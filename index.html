@@ -1,60 +1,50 @@
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head> 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./typing.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  <title>Yogesh</title>
 </head>
-
+<style>
+  
+  svg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 0;
+  }
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    justify-content: center;
+  }
+</style>
 <body>
-    <div class="main">
-        <div class="wrapper">
-            <div class="center">
-                <img src="DSC_0121_2.JPG" class="img-responsive img-rounded margin" style="display:inline" width="300" height="300">
-                <h1 style="font-size:5vw">Yogesh Singh</h1>
-                <h2 style="font-size:3vw">A <span class="code">Hello World!</span> is all you need.</h2>
-            </div>
-            <br>
-            <footer class="page-footer font-small special-color-dark pt-4">
-                <div class="container">
-                    <ul class="list-unstyled list-inline text-center">
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1" href="mailto:yogesh.singh.ams5@gmail.com">
-                                <i class="fa fa-envelope"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/singhyoge5h">
-                                <i class="fa fa-facebook"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/yogsingh/">
-                                <i class="fa fa-linkedin"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1" href="https://www.reddit.com/u/singhyog">
-                                <i class="fa fa-reddit"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1" href="#">
-                                <i class="fa fa-twitter"> </i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-copyright text-center py-3">Made with ❤ by Yogesh
-                  </div>
-            </footer>
-        </div>
-    </div>
-</body>
+  <ul>
+    <li><a class="active" href="https://y0gesh.com">Home</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="mailto:yogesh.singh.ams5@gmail.com">Contact</a></li>
+    <li><a href="/about/index.html">About</a></li>
+  </ul>
 
+  <svg id="bubbleCanvas" class="vizCanvas"></svg>
+  <h1 id="overlay">
+    <b><span
+      class="txt-rotate"
+      data-period="2000"
+      data-rotate='[ "Hello" ]'></span></b>
+  </h1>
+  <div class="bottomright"><a href="https://www.blockchain.com/explorer">Data: Bitcoin Transactions</a></div>
+</body>
+<script src="./webs.js"></script>
 </html>

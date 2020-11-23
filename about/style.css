@@ -36,30 +36,6 @@ h2 {
     text-align: center;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
-}
-
-#navbarElement {
-  float: left;
-}
-
-#navbarElement a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#navbarElement a:hover {
-  background-color: #000000;
-}
-
 a:link {
   color: #b0b0b0;
   background-color: transparent;

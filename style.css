@@ -10,7 +10,7 @@ html, body {
   justify-content: center;
 }
 
-h1 {
+/* h1 {
   font-weight: 200;
   margin: 0.4em 0;
   z-index: 2;
@@ -18,23 +18,14 @@ h1 {
   display: flex ;
   align-items: center;
   justify-content: center;
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 2em;
-  z-index: 2;
-  display: flex ;
-  align-items: center;
-  justify-content: center;
-}
+} */
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  z-index: 2;
+  z-index: 3;
   position: -webkit-sticky;
   position: sticky;
   background-color: #000000;
@@ -78,4 +69,38 @@ a:visited {
 
 .vizCanvas {
   background-color:black;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: black;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.typewriter {
+  width: 23ch;
+  animation: typing 3s steps(33), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color:#ffff;
+  z-index: 2;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }

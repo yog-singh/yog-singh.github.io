@@ -1,8 +1,7 @@
 html,body {
   font-family: 'Raleway', sans-serif;
-  padding: 1em 2em;
   font-size: 18px;
-  background: #222;
+  background: #000000;
   color: rgb(240, 240, 240)
 }
 .main {
@@ -37,6 +36,41 @@ h2 {
     text-align: center;
 }
 
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+#navbarElement {
+  float: left;
+}
+
+#navbarElement a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbarElement a:hover {
+  background-color: #000000;
+}
+
+a:link {
+  color: #b0b0b0;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #b0b0b0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .fa {
     padding: 10px;
     font-size: 30px;
@@ -51,23 +85,23 @@ h2 {
   }
   
   .fa-facebook {
-    background: #222;
+    background: #000000;
     color: white;
   }
   .fa-linkedin {
-    background: #222;
+    background: #000000;
     color: white;
   }
   .fa-envelope {
-    background: #222;
+    background: #000000;
     color: white;
   }
   .fa-reddit {
-    background: #222;
+    background: #000000;
     color: white;
   }
   .fa-twitter {
-    background: #222;
+    background: #000000;
     color: white;
   }
   .footer-copyright {

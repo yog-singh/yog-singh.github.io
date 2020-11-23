@@ -51,7 +51,7 @@ li a:hover {
   position: absolute;
   bottom: 8px;
   right: 16px;
-  font-size: 1em;
+  font-size: 0.5em;
   z-index: 2;
   text-decoration: underline;
 }

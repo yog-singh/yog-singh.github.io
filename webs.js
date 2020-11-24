@@ -82,7 +82,7 @@ websocket.onmessage = function (event) {
     var newTx = {
       id: txHash,
       value: totalTxValue,
-      scaledValue: Math.abs(5 + Math.log(totalTxValue) * 2.5),
+      scaledValue: Math.abs(5 + Math.log(totalTxValue) * 2),
     };
     txNodes.push(newTx);
     if (txNodes.length > 1000) {
@@ -112,7 +112,7 @@ var enterSelection = updateSelection
     return d.scaledValue;
   })
   .attr("fill", function (d) {
-    return d3.hsl(180 + Math.min(d.value * 4, 180), 0.5, 0.5, 0.5);
+    return d3.hsl((Math.random()*360 + 1), 0.5, 0.5, 0.5);
   }); //new transactions
 node = updateSelection.merge(enterSelection);
 bubbleSimulation.nodes(txNodes);
